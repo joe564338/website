@@ -1,0 +1,88 @@
+
+body{
+	
+}
+#wrapper {
+	margin:auto;
+	width:80%;
+	min-width:960px;
+	max-width:2048px;
+	box-shadow:3px 3px #cccccc;
+}
+header{
+	height:60px;
+	text-align:center;
+	padding-top:15px;
+	font-family:serif;
+	margin-bottom: 0;
+}
+
+nav ul
+{
+color: white;
+background: #17a;
+border-bottom: 0.2em solid #17a;
+border-right: 0.2em solid #17a;
+padding: 0 1px;
+margin-left: 0;
+width: 12em;
+font: normal 0.8em;
+}
+
+nav li
+{
+list-style: none;
+margin: 0;
+font-size: 1em;
+}
+
+nav a
+{
+display: block;
+text-decoration: none;
+margin-bottom: 0.5em;
+margin-top: 0.5em;
+color: white;
+background: #39c;
+border-width: 1px;
+border-style: solid;
+border-color: #5bd #035 #068 #6cf;
+border-left: 1em solid #fc0;
+padding: 0.25em 0.5em 0.4em 0.75em;
+}
+
+nav a#current { border-color: #5bd #035 #068 #f30; }
+
+nav a
+{
+width: 99%;
+/* only necessary for Internet Explorer */
+}
+
+nav a
+{
+voice-family: "\"}\"";
+voice-family: inherit;
+width: 9.6em;
+/* Tantek-hack should only used if Internet-Explorer 6 is in standards-compliant mode */
+}
+
+nav a
+{
+width: auto;
+/* only necessary if you use the hacks above for the Internet Explorer */
+}
+
+nav a:hover, nav a#current:hover
+{
+background: #28b;
+border-color: #069 #6cf #5bd #fc0;
+padding: 0.4em 0.35em 0.25em 0.9em;
+}
+
+nav a:active, nav a#current:active
+{
+background: #17a;
+border-color: #069 #6cf #5bd white;
+padding: 0.4em 0.35em 0.25em 0.9em;
+}
