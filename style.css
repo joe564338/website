@@ -2,87 +2,194 @@
 body{
 	
 }
+
 #wrapper {
+	
 	margin:auto;
 	width:80%;
 	min-width:960px;
 	max-width:2048px;
 	box-shadow:3px 3px #cccccc;
+	background: #0D2A51; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0D2A51, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0D2A51, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0D2A51, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0D2A51, white); /* Standard syntax */
 }
-header{
+#header{
 	height:60px;
+	background-image:url(logo.png);
+	background-repeat: no-repeat;
 	text-align:center;
 	padding-top:15px;
 	font-family:serif;
 	margin-bottom: 0;
 }
-
+main{}
 nav ul
 {
-color: white;
-background: #17a;
-border-bottom: 0.2em solid #17a;
-border-right: 0.2em solid #17a;
-padding: 0 1px;
-margin-left: 0;
-width: 12em;
-font: normal 0.8em;
+	float:left;
+	color: white;
+	background: #17a;
+	border-bottom: 0.2em solid #17a;
+	border-right: 0.2em solid #17a;
+	padding: 0 1px;
+	margin-left: 0;
+	width: 12em;
+	font: normal 0.8em;
 }
 
 nav li
 {
-list-style: none;
-margin: 0;
-font-size: 1em;
+	list-style: none;
+	margin: 0;
+	font-size: 1em;
 }
 
 nav a
 {
-display: block;
-text-decoration: none;
-margin-bottom: 0.5em;
-margin-top: 0.5em;
-color: white;
-background: #39c;
-border-width: 1px;
-border-style: solid;
-border-color: #5bd #035 #068 #6cf;
-border-left: 1em solid #fc0;
-padding: 0.25em 0.5em 0.4em 0.75em;
+	display: block;
+	text-decoration: none;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	color: white;
+	background: #39c;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5bd #035 #068 #6cf;
+	border-left: 1em solid #fc0;
+	padding: 0.25em 0.5em 0.4em 0.75em;
 }
 
 nav a#current { border-color: #5bd #035 #068 #f30; }
 
 nav a
 {
-width: 99%;
-/* only necessary for Internet Explorer */
+	width: 99%;
+	/* only necessary for Internet Explorer */
 }
 
 nav a
 {
-voice-family: "\"}\"";
-voice-family: inherit;
-width: 9.6em;
-/* Tantek-hack should only used if Internet-Explorer 6 is in standards-compliant mode */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 9.6em;
+	/* Tantek-hack should only used if Internet-Explorer 6 is in standards-compliant mode */
 }
 
 nav a
 {
-width: auto;
-/* only necessary if you use the hacks above for the Internet Explorer */
+	width: auto;
+	/* only necessary if you use the hacks above for the Internet Explorer */
 }
 
 nav a:hover, nav a#current:hover
 {
-background: #28b;
-border-color: #069 #6cf #5bd #fc0;
-padding: 0.4em 0.35em 0.25em 0.9em;
+	background: #28b;
+	border-color: #069 #6cf #5bd #fc0;
+	padding: 0.4em 0.35em 0.25em 0.9em;
 }
 
-nav a:active, nav a#current:active
+nav:active, nav a#current
 {
-background: #17a;
-border-color: #069 #6cf #5bd white;
-padding: 0.4em 0.35em 0.25em 0.9em;
+	background: #17a;
+	border-color: #069 #6cf #5bd white;
+	padding: 0.4em 0.35em 0.25em 0.9em;
 }
+h3{
+	text-shadow: 2px 2px 8px #FF0000;
+}
+#bod {
+        font-family: arial;
+        margin: 0;
+        padding: none;
+      }
+
+      .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
+      div.emscripten { text-align: center; }      
+      div.emscripten_border { border: 1px solid black; }
+      /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+      canvas.emscripten { border: 0px none; }
+
+      #emscripten_logo {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .spinner {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: top;
+
+        -webkit-animation: rotation .8s linear infinite;
+        -moz-animation: rotation .8s linear infinite;
+        -o-animation: rotation .8s linear infinite;
+        animation: rotation 0.8s linear infinite;
+
+        border-left: 5px solid rgb(235, 235, 235);
+        border-right: 5px solid rgb(235, 235, 235);
+        border-bottom: 5px solid rgb(235, 235, 235);
+        border-top: 5px solid rgb(120, 120, 120);
+        
+        border-radius: 100%;
+        background-color: rgb(189, 215, 46);
+      }
+
+      @-webkit-keyframes rotation {
+        from {-webkit-transform: rotate(0deg);}
+        to {-webkit-transform: rotate(360deg);}
+      }
+      @-moz-keyframes rotation {
+        from {-moz-transform: rotate(0deg);}
+        to {-moz-transform: rotate(360deg);}
+      }
+      @-o-keyframes rotation {
+        from {-o-transform: rotate(0deg);}
+        to {-o-transform: rotate(360deg);}
+      }
+      @keyframes rotation {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+
+      #status {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-weight: bold;
+        color: rgb(120, 120, 120);
+      }
+
+      #progress {
+        height: 20px;
+        width: 30px;
+      }
+
+      #controls {
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+        margin-top: 30px;
+        margin-right: 20px;
+      }
+
+      #output {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-left: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        background-color: black;
+        color: white;
+        font-family: 'Lucida Console', Monaco, monospace;
+        outline: none;
+	  }
