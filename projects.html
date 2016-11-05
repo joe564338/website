@@ -23,8 +23,42 @@
 	
 	
 	<main>
+	<h2>TO TEST EMSCRIPTEN</h2>
+	<p> Just click the link below for a hello world program in Transcompilation action inside emscripten</p>
 	<a href="hello.html"> Test Emscripten</a>
-	
+	<h2> FOR THE OTHELLO TICTACTOE APPLICATION BELOW</h2>
+	<p>Warning: For whatever reason if you are using a browser like Internet Explorer or Google Chrome
+	You can only see the output in the javascript console.  Not sure why this is but Mozilla works fine
+	and so does the Windows 10 Edge browser.  Haven't tested others.  In order to input a line YOU MUST
+	type in your input, click ok and then click cancel in order for it to read.  And there is a minor 
+	bug where sometimes the window will disapear and the script will go nuts.  Sorry I'm somewhat new to
+	transcompilation and emscripten so I don't know exactly what to do to make it like it is when running
+	it natively in C++.<br>
+	First you got to choose the game by typing in 1 or 2.  Remember click OK then Cancel for it to go 
+	through properly.  Then to type in a move, Type move (c, r)  where c is the collumn (x) and r is the row
+	(y).<br>
+	You can undo moves with undo n, with n being the number of moves you wish to undo. <br>
+	And if you are playing othello and have no available moves type: move pass.<br>
+	Also PLease click ok and cancel and don't use enter as that usually leads to the pop up window 
+	disappearing forever until you reload the page.<br></p>
+	<a href="project.html"> Othello/TicTacToe</a>
+	<h2> FOR THE C HEAP APPLICATION BELOW</h2>
+	<p> The Heap application below has the same browser issue as the othello application above. The screen wont
+	show anything until the app completes if you are not using firefox or edge.  Basically its just 5 different 
+	test cases for testing My custom C heap I had to make for a class.  Its not perfect but its pretty neat to 
+	understand how malloc and free works in C.  So just type in a number 1 through 5 and submit that with an ok
+	then cancel to see the tester in action.  Shows memory locations of variables on the custom C heap.</p>
+	<a href="MyHeapTest.html">My own C heap tester</a>
+	<h2> FOR THE STANDARD DEVIATION WITH CUSTOM C HEAP APPLICATION BELOW</h2>
+	<p> The Standard Deviation application below calculates standard deviation while using my custom c heap.
+	For whatever reason the first text prompt doesn't come up before the input window in mozilla even though 
+	it does in the code if ran natively in C.  So at the first input type the number of numbers you want to use
+	for the calculation.  Then click ok and cancel once again.  After that if you are running in mozilla you 
+	should be asked to type a number. This is where you would put your first number for calculation.  After 
+	typing the number click ok and cancel.  The window and prompt will come up again however many times you
+	entered at the very beginning. So repeat as necessary.  After finishing all your inputs the app will finish
+	with the result on the bottom and throughout the application locations of memory used will also be outputted.</p>
+	<a href="MyHeapStandardDeviation.html"> Standard Deviation with my custom C heap</a>
 	</main>
 	
 	<footer>

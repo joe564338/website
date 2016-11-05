@@ -1,5 +1,11 @@
 
 body{
+	background: #0D2A51; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0D2A51, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0D2A51, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0D2A51, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0D2A51, white); /* Standard syntax */
+	background-repeat:no-repeat;
 	
 }
 
@@ -10,13 +16,10 @@ body{
 	min-width:960px;
 	max-width:2048px;
 	box-shadow:3px 3px #cccccc;
-	background: #0D2A51; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0D2A51, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0D2A51, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0D2A51, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0D2A51, white); /* Standard syntax */
+	background-color:#C1CFCF
 }
 #header{
+	background-color:#0D2A51;
 	height:60px;
 	background-image:url(logo.png);
 	background-repeat: no-repeat;
@@ -25,7 +28,9 @@ body{
 	font-family:serif;
 	margin-bottom: 0;
 }
-main{}
+main{
+	background-color:#ffffff;
+}
 nav ul
 {
 	float:left;
@@ -99,6 +104,52 @@ nav:active, nav a#current
 h3{
 	text-shadow: 2px 2px 8px #FF0000;
 }
+#gallery{
+	position:relative;
+	margin-left:150px;
+}
+figure{
+	position:absolute;
+	left: 280px;
+	text-align:center;
+	opacity:.25;
+}
+#gallery ul{
+	list-style-type:none;
+	width:300px;
+}
+#gallery li{
+	float: left;
+	display:inline;
+	padding:10px;
+}
+#gallery img{
+	border:none;
+	
+}
+#gallery a{
+	text-decoration:none;
+	font-style:italic;
+	color:#eaeaea;
+}
+#gallery span { 
+	position: absolute;
+	left: -1000px;
+	opacity: 0; 
+	transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span { 
+	position: absolute; 
+	top: 16px; 
+	left: 320px; 
+	text-align: center; 
+	opacity: 1; 
+}
+footer{
+	position:fixed;
+	bottom:0px;
+}
+/*
 #bod {
         font-family: arial;
         margin: 0;
@@ -109,7 +160,7 @@ h3{
       div.emscripten { text-align: center; }      
       div.emscripten_border { border: 1px solid black; }
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-      canvas.emscripten { border: 0px none; }
+      /*canvas.emscripten { border: 0px none; }
 
       #emscripten_logo {
         display: inline-block;
@@ -193,3 +244,4 @@ h3{
         font-family: 'Lucida Console', Monaco, monospace;
         outline: none;
 	  }
+	  */
