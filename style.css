@@ -1,10 +1,10 @@
 
 body{
-	background: #0D2A51; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0D2A51, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0D2A51, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0D2A51, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0D2A51, white); /* Standard syntax */
+	background: #003152; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#003152, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#003152, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#003152, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#003152, white); /* Standard syntax */
 	background-repeat:no-repeat;
 	
 }
@@ -16,10 +16,10 @@ body{
 	min-width:960px;
 	max-width:2048px;
 	box-shadow:3px 3px #cccccc;
-	background-color:#C1CFCF
+	background-color:#94c5ff
 }
 #header{
-	background-color:#0D2A51;
+	background-color:#003152;
 	height:60px;
 	background-image:url(logo.png);
 	background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body{
 	margin-bottom: 0;
 }
 main{
-	background-color:#ffffff;
+	background-color:#cde6ff;
 }
 nav ul
 {
