@@ -10,13 +10,12 @@ body{
 }
 
 #wrapper {
-	
 	margin:auto;
 	width:80%;
 	min-width:960px;
 	max-width:2048px;
 	box-shadow:3px 3px #cccccc;
-	background-color:#94c5ff
+	background-color:#94c5ff;
 }
 #header{
 	background-color:#003152;
@@ -148,8 +147,11 @@ figure{
 	opacity: 1; 
 }
 footer{
-	position:fixed;
-	bottom:0px;
+    height:100px;
+    width: 100%;
+    overflow:hidden;
+	text-align:center;
+	background-color:#aaaaaa
 }
 /*
 #bod {

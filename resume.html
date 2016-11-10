@@ -8,27 +8,41 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hideskills").click(function(){
+				$("#skills").hide();
+			});
+			$("#showskills").click(function(){
+				$("#skills").show();
+			});
+		});
+	</script>
 </head>
 <body>
 <div id="wrapper">
 	<div id="header"></div>
 	<nav>
 		<ul>
-			<li><a href="index.html" id="current"> Home </a></li>
+			<li><a href="index.html" > Home </a></li>
 			<li><a href="projects.html"> Projects</a></li>
 			<li><a href="gallery.html"> Gallery</a></li>
-			<li><a href="resume.html"> Resume</a></li>
+			<li><a href="resume.html" id="current"> Resume</a></li>
 		</ul>
 	</nav>
 	
 	
 	<main>
-	<h3> Resume</h3>
+	<h2> Resume</h2>
+	<h3 id="skills">SKILLS</h3>
+	<button id="hideskills">Hide</button>
+	<button id="showskills">Show</button>
 	
 	</main>
 	
 	<footer>
-		
+		Email:&nbsp
 		<a href="mailto:owner@joemccullyengineering.com	" target="_top">owner@joemccullyengineering.com	</a>
 
 	</footer>
