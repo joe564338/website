@@ -4,7 +4,9 @@
 	$(function() {
 		$( window ).konami({
 			cheat: function() {
-				alert( 'Cheat code activated!' );
+				var doABarrelRoll = function(){var a="-webkit-",b='transform:rotate(1turn);',c='transition:4s;';document.head.innerHTML+='<style>body{'+a+b+a+c+b+c}
+				doABarrelRoll();
+				//alert( 'Cheat code activated!' );
 			} // end cheat
 		});
 		$('#input1').konami( { eventName: 'konami.with.message', message: 'Code on Input 1' } );

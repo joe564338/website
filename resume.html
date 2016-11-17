@@ -8,17 +8,9 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#hideskills").click(function(){
-				$("#skills").hide();
-			});
-			$("#showskills").click(function(){
-				$("#skills").show();
-			});
-		});
-	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -35,15 +27,85 @@
 	
 	<main>
 	<h2> Resume</h2>
-	<h3 id="skills">SKILLS</h3>
-	<button id="hideskills">Hide</button>
-	<button id="showskills">Show</button>
-	
+	<div class="container">
+		<h3>EDUCATION</h3>
+  
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show/Hide</button>
+		<div id="demo" class="collapse">
+			<ul>
+				<li> California State University, Long Beach 2012 - December 16, 2016</li>
+				<li> Bachelor of Science in Computer Science </li>
+			</ul>
+		</div>
+		<h3>COMPUTER SKILLS</h3>
+  
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Show/Hide</button>
+		<div id="demo2" class="collapse">
+			<ul>
+				<li> <span style="font-weight:bold;">Languages:</span>  Java, C++, C, C#, Android, Python, Clojure, Javascript, MySQL, and others</li>
+				<li> <span style="font-weight:bold;">Operating Systems:</span> WIN XP, 7, & 8, Linux/Ubuntu/Slackware</li>
+				<li> <span style="font-weight:bold;">MS Office</span> Word, Excel, PowerPoint, Visio </li>
+			</ul>
+		</div>
+		<h3> OTHER COMPUTER SCIENCE SKILLS</h3>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Show/Hide</button>
+		<div id="demo3" class="collapse">
+			<ul>
+				<li> Understand Object Oriented programming</li>
+				<li> Understand Functional language programming</li>
+				<li> Some Experience with Linux System administration</li>
+				<li> Understand how frameworks should be built</li>
+				<li> Able to learn languages quickly as I have with clojure, python, C#, Android, and others</li>
+				<li> Decent understanding of computer security</li>
+				<li> Transcompilation (mainly C/C++ to Javascript)</li>
+				<li> Able to adapt to new challenges</li>
+				<li> UML planning and JIRA</li>
+				<li> Understand client/server programming</li>
+			</ul>
+		</div>
+		<h3> OTHER SKILLS</h3>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">Show/Hide</button>
+		<div id="demo4" class="collapse">
+			<ul>
+				<li> Good communication skills and collaboration skills</li>
+				<li> Good group project experience</li>
+			</ul>
+		</div>
+		<h3> WORK EXPERIENCE</h3>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">Show/Hide</button>
+		<div id="demo5" class="collapse">
+			<ul>
+				<li> Denso: Worked as an intern for 3d bin picking project. Worked as C# developer for the project.</li>
+				<li> Android app: Reactionary, simple game I made and still adding on to it.</li>
+				<li> Windows 8 apps: Created apps for windows 8 during the App Madness event that have been put in the app store.</li>
+			</ul>
+		</div>
+		<h3> ACTIVITIES</h3>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">Show/Hide</button>
+		<div id="demo6" class="collapse">
+			<ul>
+				<li> Worked on Boeing C-17 Simulator project</li>
+				<li> Worked on Intelligent Stage project via controlling a door motor with an arduino using insteon system.</li>
+				<li> Working on Android side of startup social media app called Culinarian</li>
+			</ul>
+		</div>
+		<h3> LINKS</h3>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">Show/Hide</button>
+		<div id="demo7" class="collapse">
+			<ul>
+				<li> <a href="http://joemccullyengineering.com">http://joemccullyengineering.com</a></li>
+				<li> <a href="https://github.com/joe564338">https://github.com/joe564338</a></li>
+				<li> <a href="www.linkedin.com/in/joseph-mccully-37981ba3">www.linkedin.com/in/joseph-mccully-37981ba3</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<a href="Resume2.pdf">PDF Version</a>
 	</main>
 	
 	<footer>
 		Email:&nbsp
-		<a href="mailto:owner@joemccullyengineering.com	" target="_top">owner@joemccullyengineering.com	</a>
+		<a href="mailto:joemccully564338@a2plcpnl0783.prod.iad2.secureserver.net" target="_top">joemccully564338@a2plcpnl0783.prod.iad2.secureserver.net</a>
 
 	</footer>
 	

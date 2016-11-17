@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/blueimp-gallery.css">
+	<link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
+	<link rel="stylesheet" href="css/blueimp-gallery-video.css">
+	
 </head>
 <body>
 <div id="wrapper">
@@ -21,9 +25,31 @@
 		</ul>
 	</nav>
 	
-	
-	
-	<div id="gallery">
+	<main>
+	<h2> Smart Home Project Piece that I did for my School</h2> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/bQ7XNjlCNwU" frameborder="0" allowfullscreen></iframe><br>
+	<h2>Other things I did</h2>
+	<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+	<div id="links">
+    <a href="arduino door.jpg" title="arduino">
+        
+    </a>
+    <a href="TicTacToe1move.png" title="TicTacToe (See my projects page)">
+        
+    </a>
+    <a href="Othello1move.png" title="Othello (See my projects page)">
+        
+    </a>
+</div>
+	</main>
+	<!---<div id="gallery">
 	<figure><img src="arduino doorconfine.jpg" width ="450" height="450"
 			alt="arduino door"></figure>
 		<ul>
@@ -52,35 +78,7 @@
 			alt="TicTacToe after 1 move"><br> TicTacToe after 1 move</span></a>
 			</li>
 		</ul>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	</div>--->
 	
 	<footer>
 		Email:&nbsp
@@ -89,6 +87,16 @@
 	</footer>
 	
 </div>
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
 </body>
 
 </html>
